@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --LightGray: hsl(212, 45%, 89%);
+  --GrayBlue: hsl(220, 15%, 55%);
+  --DarkBlue: hsl(218, 44%, 22%);
+
+  /* Font Family */
+  --outfit: "Outfit", sans-serif;
+
+  /* Font Weight */
+  --normal: 400;
+  --bold: 700;
+
+  /* Widths */
+  --mobile: 375px;
+  --desktop: 1440px;
+  --image: 300px;
+}
+
+body {
+  font-size: 15px;
+  font-family: var(--outfit);
+  height: 100vh;
+  width: var(--desktop);
+  background-color: var(--LightGray);
+}
+
+.card {
+  position: absolute;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: var(--white);
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info {
+  text-align: center;
+}
+
+.qrCode {
+  width: var(--image);
+  height: var(--image);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
